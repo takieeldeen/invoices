@@ -1,0 +1,267 @@
+{
+  "title": "Invoices",
+  "invoices": {
+    "new": "New Invoice",
+    "filters": {
+      "title": "Filter by Status",
+      "paid": "Filter by Paid",
+      "pending": "Filter by Pending",
+      "draft": "Filter by Drafts"
+    }
+  },
+  "invoice": {
+    "due": "Due",
+    "currency": "EGP",
+    "status": {
+      "Paid": "Paid",
+      "Pending": "Pending",
+      "Draft": "Draft"
+    }
+  },
+  "invoiceDetails": {
+    "title": "Status",
+    "back": "Go back",
+    "status": {
+      "Paid": "Paid",
+      "Pending": "Pending",
+      "Draft": "Draft"
+    },
+    "invoiceDate": "Invoice Date",
+    "paymentDate": "Payment Date",
+    "to": "Bill To",
+    "toEmail": "Send To",
+    "total": "Grand Total",
+    "currency": "EGP",
+    "controls": {
+      "markPaid": "Mark as Paid",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "bill": {
+      "itemName": "Item Name",
+      "qty": "QTY",
+      "price": "Price",
+      "total": "Total",
+      "currency": "EGP"
+    }
+  },
+  "newBill": {
+    "update": "Update Existing Bill",
+    "new": "New Bill",
+    "from": {
+      "billFrom": "Bill From",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "country": "Country"
+    },
+    "to": {
+      "billTo": "Bill To",
+      "clientName": "Client's Name",
+      "clientEmail": "Client's Email",
+      "streetAddress": "Street Address",
+      "city": "City",
+      "postalCode": "Postal Code",
+      "country": "Country",
+      "invoiceDate": "Invoice Date",
+      "paymentTerms": "Payment Terms",
+      "description": "Project Description"
+    },
+    "itemList": {
+      "title": "Items List",
+      "itemName": "Item Name",
+      "qty": "QTY",
+      "price": "Price",
+      "total": "Total",
+      "delete": "Delete",
+      "addNewItem": "+ Add New Item",
+      "cancel": "Cancel",
+      "save": "Save Changes"
+    },
+    "status": {
+      "title": "Status",
+      "Paid": "Paid",
+      "Draft": "Draft",
+      "Pending": "Pending"
+    }
+  },
+  "prompt": {
+    "delete": "Are you sure you want to delete this invoice?",
+    "markPaid": "Are you sure you want to mark this invoice as paid?",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "emptyResources": {
+    "msgStart": "Sorry, you don't seem to have any",
+    "msgEnd": "in your database",
+    "invoices": "Invoices",
+    "users": "Users"
+  },
+  "wrongRoute": "This Path doesn't exist",
+  "login": {
+    "appname": "Invoices",
+    "title": "Sign in to your account",
+    "username": "Username",
+    "password": "Password",
+    "login": "Log In"
+  },
+  "register": {
+    "appname": "Invoices",
+    "title": "Register new user",
+    "username": "Username",
+    "password": "Password",
+    "passwordConfirm": "Confirm password",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "profileImg": "Profile Image",
+    "register": "Register"
+  },
+  "actions": {
+    "title": "Actions",
+    "user": "User",
+    "action": "Action",
+    "id": "Inv ID",
+    "status": "Status",
+    "date": "Date",
+    "price": "Price",
+    "actions": {
+      "create": "Create",
+      "update": "Update",
+      "delete": "Delete"
+    },
+    "statusOptions": {
+      "Draft": "Draft",
+      "Pending": "Pending",
+      "Paid": "Paid"
+    }
+  },
+  "users": {
+    "title": "All Members",
+    "add": "Add Member",
+    "username": "Username",
+    "userId": "User ID",
+    "email": "email",
+    "role": {
+      "title": "Role",
+      "admin": "Admin",
+      "user": "User"
+    },
+    "joinDate": "Join Date",
+    "lastRegistration": "Last login",
+    "status": {
+      "title": "Status",
+      "suspended": "Suspended",
+      "active": "Active"
+    }
+  },
+  "report": {
+    "title": "Staff report",
+    "role_title": {
+      "admin": "Adminstrator at Invoice",
+      "user": "Employee at Invoice"
+    },
+    "ranking": "Ranking",
+    "overallSales": "Overall Sales",
+    "invoiceToday": "Total Invoices",
+    "invoices": "Invoices",
+    "statistics": "Invoices Statistics",
+    "createdInvoice": "Created Invoice",
+    "updatedInvoice": "Updated Invoice",
+    "deletedInvoice": "Deleted Invoice",
+    "avgInvoice": "Avg Invoices/month",
+    "details": "Details",
+    "email": "Email Address",
+    "phoneNumber": "Phone Number",
+    "status": "Status",
+    "role": {
+      "title": "Role",
+      "admin": "Admin",
+      "user": "Employee"
+    },
+    "suspended": {
+      "true": "Suspended",
+      "false": "Active"
+    },
+    "changePermisson": "Change Permissions",
+    "userOptions": {
+      "update": "Update User",
+      "suspend": "Suspend User"
+    }
+  },
+  "prompts": {
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "suspend": "Are you sure you want to suspend this user",
+    "delete": "Are you sure you want to delete this invoice"
+  },
+  "updateUser": {
+    "title": "Update User",
+    "email": "email",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "phone": "Phone Number",
+    "role": {
+      "admin": "Admin",
+      "adminDesc": "Will have more authorities",
+      "user": "User",
+      "userDesc": "Will have less authorities",
+      "updateBtn": "Update",
+      "cancelBtn": "Cancel"
+    }
+  },
+  "dashboard": {
+    "totalInvoice": "Total Invoices",
+    "paidInvoice": "Paid Invoices",
+    "pendingInvoice": "Pending Invoices",
+    "draftsInvoice": "Draft Invoices",
+    "currency": "EGP",
+    "movements": {
+      "title": "Invoice Movements",
+      "user": "User",
+      "date": "Date",
+      "action": {
+        "title": "Actions",
+        "create": "Create",
+        "update": "Update",
+        "delete": "Delete"
+      },
+      "status": {
+        "title": "Status",
+        "Pending": "Pending",
+        "Draft": "Draft",
+        "Paid": "Paid"
+      },
+      "price": "Price"
+    },
+    "graphs": {
+      "action": {
+        "title": "Actions stats",
+        "create": "Create",
+        "delete": "Delete",
+        "update": "Update",
+        "timing": "Since Last Month",
+        "currency": "EGP"
+      },
+      "status": {
+        "title": "Status stats",
+        "Paid": "Paid",
+        "Pending": "Pending",
+        "Draft": "Drafts",
+        "timing": "Since Last Month",
+        "currency": "EGP"
+      }
+    }
+  },
+  "profile": {
+    "name": "Name",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email",
+    "phone": "Phone Number",
+    "role": "Role",
+    "lastSignedIn": "Last Signed In",
+    "memberSince": "Member since",
+    "admin": "Admin",
+    "user": "User"
+  }
+}
