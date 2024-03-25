@@ -3,7 +3,7 @@
 ## Overview
 
 This Invoice Management App is designed to streamline invoice management processes, offering features for creating, reading, updating, and deleting invoices. With a comprehensive user management system and detailed monitoring of all invoice operations, it provides a robust solution for businesses. The app is built with a responsive design, offering support for English and Arabic languages, as well as both dark and light modes.
-![App Over View](./Final_Screens/Linkedin_Post.png)
+![App Over View](./Final_Screens/Linkedin_Post.jpg)
 
 ## Features
 
