@@ -13,6 +13,8 @@ dist-ssr
 *.local
 Final Screens
 dev-data
+src/services/supabase.js
+src/services/supabaseAdmin.js
 
 # Editor directories and files
 .vscode/*
