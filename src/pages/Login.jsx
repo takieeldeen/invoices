@@ -20,8 +20,8 @@ function Login() {
     navigate("/invoices");
   }
 
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("takie@takie.com");
+  const [password, setPassword] = useState("takietakie");
 
   const { isPending, login } = useLogin();
 
