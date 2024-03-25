@@ -1,0 +1,267 @@
+{
+  "title": "فواتير",
+  "invoices": {
+    "new": "فاتورة جديدة",
+    "filters": {
+      "title": "فلترة حسب الحالة",
+      "paid": "عرض المدفوع",
+      "pending": "عرض الغير مدفوع",
+      "draft": "عرض المسودات"
+    }
+  },
+  "invoice": {
+    "due": "يُستحق في",
+    "currency": "ج م",
+    "status": {
+      "Paid": "مدفوع",
+      "Pending": "قيد الانتظار",
+      "Draft": "مسودة"
+    }
+  },
+  "invoiceDetails": {
+    "title": "وضع الفاتورة",
+    "back": "عودة",
+    "status": {
+      "Paid": "مدفوع",
+      "Pending": "قيد الانتظار",
+      "Draft": "مسودة"
+    },
+    "invoiceDate": "تاريخ التحرير",
+    "paymentDate": "تاريخ الدفع",
+    "to": "تُصرف إلى",
+    "toEmail": "البريد الإلكتروني",
+    "total": "الإجمالي",
+    "currency": "ج م",
+    "controls": {
+      "markPaid": "تم الدفع",
+      "edit": "تحرير",
+      "delete": "حذف"
+    },
+    "bill": {
+      "itemName": "اسم الصنف",
+      "qty": "الكمية",
+      "price": "السعر",
+      "total": "الإجمالي",
+      "currency": "ج م"
+    }
+  },
+  "newBill": {
+    "update": "تعديل الفاتورة",
+    "new": "فاتورة جديدة",
+    "from": {
+      "billFrom": "جهة الصدور",
+      "streetAddress": "الشارع",
+      "city": "المدينة",
+      "postalCode": "الكود البريدي",
+      "country": "البلد"
+    },
+    "to": {
+      "billTo": "جهة الاستلام",
+      "clientName": "اسم العميل",
+      "clientEmail": "البريد الالكتروني",
+      "streetAddress": "الشارع",
+      "city": "المدينة",
+      "postalCode": "الكود البريدي",
+      "country": "البلد",
+      "invoiceDate": "تاريخ الإصدار",
+      "paymentTerms": "شروط السداد",
+      "description": "وصف المشروع"
+    },
+    "itemList": {
+      "title": "قائمة الأصناف",
+      "itemName": "اسم الصنف",
+      "qty": "الكمية",
+      "price": "السعر",
+      "total": "الإجمالي",
+      "delete": "حذف",
+      "addNewItem": "+ إضافة صنف جديد",
+      "cancel": "إلغاء",
+      "save": "حفظ"
+    },
+    "status": {
+      "title": "حالة الفاتورة",
+      "Paid": "مدفوع",
+      "Draft": "مسودة",
+      "Pending": "قيد الانتظار"
+    }
+  },
+  "prompt": {
+    "delete": "هل انت متأكد من حذف هذه الفاتورة؟",
+    "markPaid": "هل انت متأكد من تعديل هذه الفاتورة كمدفوعة",
+    "cancel": "إلغاء",
+    "confirm": "تأكيد"
+  },
+  "emptyResources": {
+    "msgStart": "عفواً ليس لديك",
+    "msgEnd": "في قاعدة البيانات",
+    "invoices": "فواتير",
+    "users": "مستخدمين"
+  },
+  "wrongRoute": "هذا المسار غير صحيح",
+  "login": {
+    "appname": "فواتير",
+    "title": "سجل الدخول إلى حسابك",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "login": "تسجيل الدخول"
+  },
+  "register": {
+    "appname": "فواتير",
+    "title": "تسجيل مستخدم جديد",
+    "username": "اسم المستخدم",
+    "password": "كلمة المرور",
+    "passwordConfirm": "تأكيد كلمة المرور",
+    "register": "تسجيل",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "profileImg": "صورة المستخدم"
+  },
+  "actions": {
+    "title": "قائمة الإجراءات",
+    "user": "المستخدم",
+    "action": "الإجراء",
+    "id": "م",
+    "status": "الحالة",
+    "date": "التاريخ",
+    "price": "السعر",
+    "actions": {
+      "create": "جديد",
+      "update": "تحديث",
+      "delete": "حذف"
+    },
+    "statusOptions": {
+      "Draft": "مسودة",
+      "Pending": "قيد الانتظار",
+      "Paid": "مدفوع"
+    }
+  },
+  "users": {
+    "title": "جميع الأعضاء",
+    "add": "إضافة عضو",
+    "username": "اسم المستخدم",
+    "userId": "الرقم التعريفي",
+    "email": "البريد الالكتروني",
+    "role": {
+      "title": "المستوى",
+      "admin": "مسؤول",
+      "user": "مستخدم"
+    },
+    "joinDate": "تاريخ الالتحاق",
+    "lastRegistration": "اخر نشاط",
+    "status": {
+      "title": "الحالة",
+      "suspended": "مستبعد",
+      "active": "نشط"
+    }
+  },
+  "report": {
+    "title": "تقرير موظف",
+    "role_title": {
+      "admin": "مسؤول في فواتير",
+      "user": "موظف في فواتير"
+    },
+    "ranking": "التقييم",
+    "overallSales": "إجمالي المبيعات",
+    "invoiceToday": "إجمالي الفواتير",
+    "statistics": "إحصائيات الفواتير",
+    "invoices": "الفواتير",
+    "createdInvoice": "الفواتير الجديدة",
+    "updatedInvoice": "الفواتير المحدثة",
+    "deletedInvoice": "الفواتير المحذوفة",
+    "avgInvoice": "متوسط الفواتير/الشهر",
+    "details": "معلومات",
+    "email": "البريد الالكتروني",
+    "phoneNumber": "رقم التليفون",
+    "status": "الحالة",
+    "role": {
+      "title": "المسمى الوظيفي",
+      "admin": "مسؤول",
+      "user": "موظف"
+    },
+    "suspended": {
+      "true": "موقوف",
+      "false": "نشط"
+    },
+    "changePermisson": "تغيير الصلاحيات",
+    "userOptions": {
+      "update": "تحديث البيانات",
+      "suspend": "إيقاف الموظف"
+    }
+  },
+  "prompts": {
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "suspend": "هل أنت متأكد من تعطيل هذا المستخدم",
+    "delete": "هل أنت متأكد من حذف هذه الفاتورة"
+  },
+  "updateUser": {
+    "title": "تحديث بيانات المستخدم",
+    "email": "البريد الالكتروني",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "phone": "رقم الهاتف",
+    "role": {
+      "admin": "مسؤول",
+      "adminDesc": "سيكون له صلاحيات أعلى",
+      "user": "مستخدم",
+      "userDesc": "سيكون له صلاحيات أقل"
+    },
+    "updateBtn": "تحديث",
+    "cancelBtn": "إلغاء"
+  },
+  "dashboard": {
+    "totalInvoice": "إجمالي الفواتير",
+    "paidInvoice": "الفواتير المدفوعة",
+    "pendingInvoice": "الفواتير المنتظرة",
+    "draftsInvoice": "المسودات",
+    "currency": "ج م",
+    "movements": {
+      "title": "إجراءات الفواتير",
+      "user": "المستخدم",
+      "date": "التاريخ",
+      "action": {
+        "title": "الإجراء",
+        "create": "جديد",
+        "update": "تحديث",
+        "delete": "حذف"
+      },
+      "status": {
+        "title": "الحالة",
+        "Pending": "منتظر",
+        "Draft": "مسودة",
+        "Paid": "مدفوع"
+      },
+      "price": "السعر"
+    },
+    "graphs": {
+      "action": {
+        "title": "الإجراءات",
+        "create": "جديد",
+        "delete": "حذف",
+        "update": "تحديث",
+        "timing": "منذ الشهر الماضي",
+        "currency": "ج م"
+      },
+      "status": {
+        "title": "الحالة",
+        "Paid": "مدفوع",
+        "Pending": "منتظر",
+        "Draft": "مسودة",
+        "timing": "منذ الشهر الماضي",
+        "currency": "ج م"
+      }
+    }
+  },
+  "profile": {
+    "name": "الاسم",
+    "firstName": "الاسم الأول",
+    "lastName": "الاسم الأخير",
+    "email": "البريد الالكتروني",
+    "phone": "رقم الهاتف",
+    "role": "الدرجة",
+    "lastSignedIn": "اخر تسجيل دخول",
+    "memberSince": "عضو منذ",
+    "admin": "مسؤول",
+    "user": "مستخدم"
+  }
+}
