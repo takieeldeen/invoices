@@ -1,5 +1,4 @@
 import { cloneElement } from "react";
-import { FaCalendar } from "react-icons/fa";
 
 function MenuList({ options }) {
   return (

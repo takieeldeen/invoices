@@ -8,32 +8,8 @@ import { useMovements } from "../features/invoices/useMovements";
 import Spinner from "../ui/Spinner";
 
 function Movements() {
-  // const data = [
-  //   {
-  //     user: "Takie Eldeen",
-  //     action: "create",
-  //     invId: 1,
-  //     status: "Paid",
-  //     date: "13-01-2023",
-  //     price: 25000,
-  //   },
-  //   {
-  //     user: "Takie Eldeen",
-  //     action: "update",
-  //     invId: 1,
-  //     status: "Pending",
-  //     date: "13-01-2023",
-  //     price: 25000,
-  //   },
-  //   {
-  //     user: "Takie Eldeen",
-  //     action: "delete",
-  //     invId: 1,
-  //     status: "Draft",
-  //     date: "13-01-2023",
-  //     price: 25000,
-  //   },
-  // ];
+  
+ 
   const [t] = useTranslation();
   const { data: movements, isPending } = useMovements();
   const data = movements?.data;

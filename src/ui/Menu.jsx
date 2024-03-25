@@ -1,5 +1,4 @@
 import { cloneElement, createContext, useContext, useState } from "react";
-import useOutsideClick from "../hooks/useOutsideClick";
 const MenuContext = createContext();
 function Menu({ children }) {
   const [openName, setOpenName] = useState("");

@@ -19,17 +19,3 @@ export function useLogin() {
   });
   return { login, isPending };
 }
-// const queryClient = useQueryClient();
-// const navigate = useNavigate();
-// const { mutate: login, isLoading } = useMutation({
-//   mutationFn: loginAPI,
-//   onSuccess: (user) => {
-//     queryClient.setQueryData(["user"], user);
-//     toast.success("Logged In succefully");
-//     navigate("/invoices");
-//   },
-//   onError: () => {
-//     toast.error("Something went wrong!");
-//   },
-// });
-// return { login, isLoading };

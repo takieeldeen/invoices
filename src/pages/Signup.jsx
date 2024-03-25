@@ -1,8 +1,5 @@
 import { ImPacman } from "react-icons/im";
-import { MdAlternateEmail } from "react-icons/md";
-import Input from "../ui/Input";
-import { FaLock, FaUser } from "react-icons/fa6";
-import Button from "../ui/Button";
+
 import { useTranslation } from "react-i18next";
 import { useForm } from "react-hook-form";
 import signupImg from "../../public/signup.svg";

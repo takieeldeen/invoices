@@ -35,27 +35,7 @@ function Movements() {
             <span>28,000</span>
           </li>
         ))}
-        {/* <li className="grid grid-cols-5 rounded-full bg-green-700 p-2 text-center text-sm text-purple-100">
-          <span>Takie Eldeen</span>
-          <span>28-03-1998</span>
-          <span>Creation</span>
-          <span>Pending</span>
-          <span>28,000</span>
-        </li>
-        <li className="grid grid-cols-5 rounded-full bg-purple-800 p-2 text-center text-sm text-purple-100">
-          <span>Takie Eldeen</span>
-          <span>28-03-1998</span>
-          <span>Creation</span>
-          <span>Pending</span>
-          <span>28,000</span>
-        </li>
-        <li className="grid grid-cols-5 rounded-full bg-green-700 p-2 text-center text-sm text-purple-100">
-          <span>Takie Eldeen</span>
-          <span>28-03-1998</span>
-          <span>Creation</span>
-          <span>Pending</span>
-          <span>28,000</span>
-        </li> */}
+        
       </ul>
     </div>
   );

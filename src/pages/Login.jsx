@@ -27,9 +27,6 @@ function Login() {
 
   function handleSubmit(e) {
     e.preventDefault();
-<<<<<<< HEAD
-=======
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
     if (!email || !password) return;
 
     login({ email, password });
@@ -55,10 +52,7 @@ function Login() {
           name="username"
           icon={<FaUser />}
           required={true}
-<<<<<<< HEAD
           defaultValue={"soska@soska.com"}
-=======
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
         />
         <Input
           setFn={setPassword}
@@ -67,10 +61,7 @@ function Login() {
           name="password"
           icon={<FaLock />}
           required={true}
-<<<<<<< HEAD
           defaultValue={123456789}
-=======
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
         />
 
         <Button

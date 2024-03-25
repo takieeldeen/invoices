@@ -15,11 +15,8 @@ import { useCreateInvoice } from "./useCreateInvoice";
 import Spinner from "../../ui/Spinner";
 import OptionBox from "../../ui/OptionBox";
 import { useUpdateInvoice } from "./useUpdateInvoice";
-<<<<<<< HEAD
 import { useUser } from "../users/useUser";
 import OverlaySpinner from "../../ui/OverlaySpinner";
-=======
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
 
 function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
   const ref = useOutsideClick(close, true);
@@ -28,11 +25,7 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
 
   const [items, setItems] = useState();
   const [total, setTotal] = useState(editData.editObj?.total || 0);
-<<<<<<< HEAD
   const { user: currentUser, isLoading: isLoadingCurrentUser } = useUser();
-=======
-
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
   //Registering the form using react hook form
   const {
     register,
@@ -45,7 +38,6 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
   setValue("items", items);
   const { createInv, isCreating } = useCreateInvoice();
   const { updateInv, isUpdating } = useUpdateInvoice();
-<<<<<<< HEAD
 
   const onSubmit = (data) => {
     if (mode === "new") {
@@ -58,11 +50,6 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
         "and data of",
         data,
       );
-=======
-  const onSubmit = (data) => {
-    if (mode === "new") {
-      createInv(data);
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
     } else {
       updateInv({ updated: data, id: editData.id });
     }
@@ -92,10 +79,7 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
         onSubmit={handleSubmit(onSubmit)}
         className="absolute top-0 mr-2 flex h-screen w-full flex-col gap-6 overflow-y-scroll bg-neutral-200 p-4 drop-shadow-lg dark:bg-dark md:w-96 "
       >
-<<<<<<< HEAD
         {(isUpdating || isCreating) && <OverlaySpinner />}
-=======
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
         <Button
           className="absolute top-2 bg-transparent hover:bg-transparent [&:lang(ar)]:left-0 [&:lang(en)]:right-0"
           onClick={(e) => handleClose(e)}
@@ -272,13 +256,8 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
             editedItems={editData?.editObj?.items}
           />
         </div>
-<<<<<<< HEAD
         <input type="text" {...register("items")} name="items" hidden />
         <input name="total" type="text" {...register("total")} hidden />
-=======
-        <input type="text" {...register("items")} name="items" />
-        <input name="total" type="text" {...register("total")} />
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
         <div className="flex gap-3 self-end">
           <Button
             className="bg-tertiary hover:bg-dark dark:hover:bg-blue-950"

@@ -65,11 +65,7 @@ function ItemsInput({ setVal, setTotal, mode = "new", editedItems = [] }) {
       <tbody>
         {items.length === 0 && (
           <p className="my-2 text-center text-xl text-purple-500">
-<<<<<<< HEAD
             {t("newBill.noItems")}
-=======
-            لا يوجد اصناف مضافة
->>>>>>> 8cb2b3e681733f6d5994bfef949239a73b023f74
           </p>
         )}
         {items.map((item, index) => (
