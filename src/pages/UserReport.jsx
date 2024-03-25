@@ -6,7 +6,7 @@ import {
   FaReceipt,
   FaTrash,
 } from "react-icons/fa6";
-import profile from "../../public/profiles/avatar.jpg";
+
 import EmptyResource from "../ui/EmptyResource";
 import Invoice from "../ui/Invoice";
 import { useCurrentViewport } from "../hooks/useCurrentViewport";
@@ -14,8 +14,8 @@ import useInvoices from "../features/invoices/useInvoices";
 import Spinner from "../ui/Spinner";
 import { useTranslation } from "react-i18next";
 import Menu from "../ui/Menu";
-import MenuList from "../ui/MenuList";
-import { Link, useNavigate, useParams } from "react-router-dom";
+
+import { Link, useParams } from "react-router-dom";
 import { useSpecificUser } from "../features/users/useSpecificUser";
 import { useReports } from "../features/invoices/useReports";
 import { formatPrice } from "../utilities/formatPrice";

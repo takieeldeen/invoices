@@ -1,19 +1,16 @@
 import { FaChevronLeft, FaCircle } from "react-icons/fa";
 import { NavLink, useParams } from "react-router-dom";
-import Prompt from "../ui/Prompt";
 import { useTranslation } from "react-i18next";
 import { formatDate } from "../utilities/formatDate";
 import { formatPrice } from "../utilities/formatPrice";
 import useInvoice from "../features/invoices/useInvoice";
 import Spinner from "../ui/Spinner";
 import useDeleteInvoice from "../features/invoices/useDeleteInvoice";
-import toast from "react-hot-toast";
-import EmptyResource from "../ui/EmptyResource";
 import PageNotFound from "./PageNotFound";
 import { useUpdateInvoice } from "../features/invoices/useUpdateInvoice";
 import CreateInvoiceForm from "../features/invoices/CreateInvoiceForm";
 import Modal from "../ui/Modal";
-
+import Prompt from "../ui/Prompt";
 function InvoiceDetails() {
   const [t, i18n] = useTranslation();
   const { id } = useParams();
@@ -58,21 +55,21 @@ function InvoiceDetails() {
               </div>
               {/* Desktop Controls */}
               <div className=" w-full items-center justify-end gap-2 sm:hidden md:flex ">
-                <Prompt>
-                  <Modal>
-                    <Modal.Open>
-                      <button className="rounded-full bg-neutral-300 px-6 py-3 text-sm font-bold tracking-wide text-neutral-600 transition-all duration-300 hover:bg-neutral-400">
-                        {t("invoiceDetails.controls.edit")}
-                      </button>
-                    </Modal.Open>
+                <Modal>
+                  <Modal.Open>
+                    <button className="rounded-full bg-neutral-300 px-6 py-3 text-sm font-bold tracking-wide text-neutral-600 transition-all duration-300 hover:bg-neutral-400">
+                      {t("invoiceDetails.controls.edit")}
+                    </button>
+                  </Modal.Open>
 
-                    <Modal.Container>
-                      <CreateInvoiceForm
-                        mode="update"
-                        editData={{ id, editObj: invoiceData }}
-                      />
-                    </Modal.Container>
-                  </Modal>
+                  <Modal.Container>
+                    <CreateInvoiceForm
+                      mode="update"
+                      editData={{ id, editObj: invoiceData }}
+                    />
+                  </Modal.Container>
+                </Modal>
+                <Prompt>
                   <Prompt.Open promptName="deleteConfirmation">
                     <button
                       disabled={isDeleting}
@@ -84,28 +81,27 @@ function InvoiceDetails() {
                   </Prompt.Open>
                   {/* Delete confirmation prompt */}
                   <Prompt.Container promptName="deleteConfirmation">
-                    {/* <h3 className="mb-3 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-                  Invoice delete Confirmation
-                </h3> */}
-                    <p className="mb-4 text-dark dark:text-neutral-200">
-                      {t("prompt.delete")}
-                    </p>
-                    <div className="flex justify-end gap-2">
-                      <button
-                        className="rounded-full bg-neutral-300 px-6 py-3 text-sm font-bold tracking-wide  text-neutral-900 transition-all duration-300 hover:bg-neutral-400"
-                        onClick={() => close()}
-                      >
-                        {t("prompt.cancel")}
-                      </button>
-                      <button
-                        onClick={() => deleteInv(invoiceData)}
-                        disabled={isDeleting}
-                        className="rounded-full bg-red-500 px-6 py-3 text-sm font-bold tracking-wide text-white transition-all duration-300 hover:bg-red-600"
-                      >
-                        {t("prompt.confirm")}
-                        {isDeleting && <Spinner />}
-                      </button>
-                    </div>
+                    <>
+                      <p className="mb-4 text-dark dark:text-neutral-200">
+                        {t("prompt.delete")}
+                      </p>
+                      <div className="flex justify-end gap-2">
+                        <button
+                          className="rounded-full bg-neutral-300 px-6 py-3 text-sm font-bold tracking-wide  text-neutral-900 transition-all duration-300 hover:bg-neutral-400"
+                          // onClick={() => close()}
+                        >
+                          {t("prompt.cancel")}
+                        </button>
+                        <button
+                          onClick={() => deleteInv(invoiceData)}
+                          disabled={isDeleting}
+                          className="rounded-full bg-red-500 px-6 py-3 text-sm font-bold tracking-wide text-white transition-all duration-300 hover:bg-red-600"
+                        >
+                          {t("prompt.confirm")}
+                          {isDeleting && <Spinner />}
+                        </button>
+                      </div>
+                    </>
                   </Prompt.Container>
 
                   {invoiceData.status !== "Paid" && (

@@ -13,7 +13,6 @@ import { useEffect, useState } from "react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useSearchParams } from "react-router-dom";
 import EmptyResource from "../ui/EmptyResource";
-import { useUser } from "../features/users/useUser";
 
 function Invoices() {
   const [t, i18next] = useTranslation();
@@ -21,9 +20,9 @@ function Invoices() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [filter, setFilter] = useState(searchParams.get("status") || "");
 
-  const { user: currentUser, isLoading: isLoadingCurrentUser } = useUser();
-  console.log(currentUser);
+  // const { user: currentUser, isLoading: isLoadingCurrentUser } = useUser();
   let { isLoading, error, data: invoices } = useInvoices(filter);
+
   const queryClient = useQueryClient();
 
   const currentViewPort = useCurrentViewport();

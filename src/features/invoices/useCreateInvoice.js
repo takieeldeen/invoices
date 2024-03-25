@@ -4,7 +4,7 @@ import toast from "react-hot-toast";
 
 export function useCreateInvoice() {
   const queryClient = useQueryClient();
-  const { mutate: createInv, isLoading: isCreating } = useMutation({
+  const { mutate: createInv, isPending: isCreating } = useMutation({
     mutationFn: createInvoice,
     onSuccess: () => {
       toast.success("Successfully Added the invoice");

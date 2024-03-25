@@ -99,6 +99,7 @@ export async function deleteInvoice(invoiceData) {
 
 export async function createInvoice(dataInput) {
   try {
+    console.log(dataInput);
     const { data, error } = await supabase
       .from("invoices")
       .insert([dataInput])

@@ -20,13 +20,14 @@ function Login() {
     navigate("/invoices");
   }
 
-  const [email, setEmail] = useState("takie@takie.com");
-  const [password, setPassword] = useState("takietakie");
+  const [email, setEmail] = useState("soska@soska.com");
+  const [password, setPassword] = useState("123456789");
 
   const { isPending, login } = useLogin();
 
   function handleSubmit(e) {
     e.preventDefault();
+    console.log(email, password);
     if (!email || !password) return;
 
     login({ email, password });
@@ -52,6 +53,7 @@ function Login() {
           name="username"
           icon={<FaUser />}
           required={true}
+          defaultValue={"soska@soska.com"}
         />
         <Input
           setFn={setPassword}
@@ -60,6 +62,7 @@ function Login() {
           name="password"
           icon={<FaLock />}
           required={true}
+          defaultValue={123456789}
         />
 
         <Button

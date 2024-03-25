@@ -15,6 +15,8 @@ import { useCreateInvoice } from "./useCreateInvoice";
 import Spinner from "../../ui/Spinner";
 import OptionBox from "../../ui/OptionBox";
 import { useUpdateInvoice } from "./useUpdateInvoice";
+import { useUser } from "../users/useUser";
+import OverlaySpinner from "../../ui/OverlaySpinner";
 
 function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
   const ref = useOutsideClick(close, true);
@@ -23,7 +25,7 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
 
   const [items, setItems] = useState();
   const [total, setTotal] = useState(editData.editObj?.total || 0);
-
+  const { user: currentUser, isLoading: isLoadingCurrentUser } = useUser();
   //Registering the form using react hook form
   const {
     register,
@@ -36,9 +38,18 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
   setValue("items", items);
   const { createInv, isCreating } = useCreateInvoice();
   const { updateInv, isUpdating } = useUpdateInvoice();
+
   const onSubmit = (data) => {
     if (mode === "new") {
+      data["created_by"] = currentUser.id;
+      data["deleted"] = false;
       createInv(data);
+      console.log(
+        "creating new Invoice with user id of ",
+        currentUser.id,
+        "and data of",
+        data,
+      );
     } else {
       updateInv({ updated: data, id: editData.id });
     }
@@ -68,6 +79,7 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
         onSubmit={handleSubmit(onSubmit)}
         className="absolute top-0 mr-2 flex h-screen w-full flex-col gap-6 overflow-y-scroll bg-neutral-200 p-4 drop-shadow-lg dark:bg-dark md:w-96 "
       >
+        {(isUpdating || isCreating) && <OverlaySpinner />}
         <Button
           className="absolute top-2 bg-transparent hover:bg-transparent [&:lang(ar)]:left-0 [&:lang(en)]:right-0"
           onClick={(e) => handleClose(e)}
@@ -244,8 +256,8 @@ function CreateInvoiceForm({ close, mode = "new", editData = {} }) {
             editedItems={editData?.editObj?.items}
           />
         </div>
-        <input type="text" {...register("items")} name="items" />
-        <input name="total" type="text" {...register("total")} />
+        <input type="text" {...register("items")} name="items" hidden />
+        <input name="total" type="text" {...register("total")} hidden />
         <div className="flex gap-3 self-end">
           <Button
             className="bg-tertiary hover:bg-dark dark:hover:bg-blue-950"
